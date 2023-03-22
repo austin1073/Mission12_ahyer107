@@ -355,12 +355,23 @@ function Teamlist() {
   ); 
 }
 
+function Footer() {
+  return(
+    <div style={{ backgroundColor: 'grey', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <p style={{ fontSize: '2em' }}>
+        <b>Created by: Austin Hyer</b>
+      </p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
       <div>
         <Welcome/>
         <Teamlist/>
+        <Footer/>
       </div>
     </div>
   );
